@@ -1,6 +1,6 @@
-# Chenguoao 个人介绍页
+# 陈国傲个人介绍页
 
-这是一个可以直接部署到 GitHub Pages 的静态个人主页。
+这是一个可以直接部署到 GitHub Pages 的静态个人主页，内容基于个人简历整理，展示 AI 产品、直播技术、创业项目与产品经历。
 
 ## 文件结构
 
@@ -19,6 +19,6 @@
 
 ## 建议替换的内容
 
-- `index.html` 里的姓名、简介、项目卡片、邮箱和 GitHub 链接。
-- `assets/hero-workspace.png` 可以替换成你的真实照片或更贴近个人风格的图片。
+- `index.html` 里的项目描述、经历补充、邮箱和 GitHub 链接。
+- `assets/hero-workspace.png` 可以替换成真实照片或更贴近个人风格的图片。
 - `styles.css` 里的颜色变量可以按个人偏好调整。
