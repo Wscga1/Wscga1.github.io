@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Chenguoao 的个人介绍页，展示项目、技能、经历与联系方式。"
+    />
+    <meta property="og:title" content="Chenguoao - 个人介绍页" />
+    <meta
+      property="og:description"
+      content="一个关于创造、工程实践和持续学习的个人主页。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/hero-workspace.png" />
+    <title>Chenguoao | 个人介绍页</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="assets/hero-workspace.png" as="image" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="主导航">
+      <a class="brand" href="#top" aria-label="回到首页">
+        <span class="brand-mark" aria-hidden="true">C</span>
+        <span>Chenguoao</span>
+      </a>
+      <nav class="site-nav" aria-label="页面导航">
+        <a href="#about">关于</a>
+        <a href="#work">项目</a>
+        <a href="#contact">联系</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="切换深浅色主题">
+        <span aria-hidden="true">◐</span>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img
+          class="hero-image"
+          src="assets/hero-workspace.png"
+          alt="一张干净的工作桌面插画，包含电脑、笔记本和绿植"
+        />
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Developer / Creator / Lifelong Learner</p>
+          <h1 id="hero-title">你好，我是 <span class="nowrap">Chenguoao。</span></h1>
+          <p class="hero-copy">
+            我喜欢把想法做成真实可用的作品，关注工程质量、产品体验和长期积累。
+            这里记录我的项目、技能和正在探索的方向。
+          </p>
+          <div class="hero-actions" aria-label="主要操作">
+            <a class="button primary" href="#work">查看项目</a>
+            <a class="button secondary" href="#contact">联系我</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro-band" id="about" aria-labelledby="about-title">
+        <div class="section-inner intro-layout">
+          <div>
+            <p class="section-kicker">About</p>
+            <h2 id="about-title">把复杂问题拆开，再把答案做漂亮。</h2>
+          </div>
+          <div class="intro-copy">
+            <p>
+              我正在构建自己的技术作品集，偏爱清晰、克制、能真正解决问题的设计。
+              平时会关注 Web 开发、自动化、AI 工具和个人知识管理。
+            </p>
+            <p>
+              这个页面是我的 GitHub 个人名片，也会随着新项目、新经历和新的想法持续更新。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="focus-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="section-kicker">Focus</p>
+            <h2 id="focus-title">当前关注</h2>
+          </div>
+          <div class="focus-grid">
+            <article class="focus-item reveal">
+              <span class="item-index">01</span>
+              <h3>Web 体验</h3>
+              <p>构建响应式、易维护、加载快速的页面和应用界面。</p>
+            </article>
+            <article class="focus-item reveal">
+              <span class="item-index">02</span>
+              <h3>AI 工作流</h3>
+              <p>用 AI 辅助研究、写作、代码生成和重复任务自动化。</p>
+            </article>
+            <article class="focus-item reveal">
+              <span class="item-index">03</span>
+              <h3>长期作品集</h3>
+              <p>把学习过程沉淀成项目、笔记、工具和可复用模板。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section work-band" id="work" aria-labelledby="work-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="section-kicker">Selected Work</p>
+            <h2 id="work-title">代表项目</h2>
+          </div>
+          <div class="project-grid">
+            <article class="project-card reveal">
+              <div class="project-meta">
+                <span>Web</span>
+                <span>2026</span>
+              </div>
+              <h3>个人主页</h3>
+              <p>一个适合 GitHub Pages 发布的个人介绍页，用来展示项目、技能和联系方式。</p>
+              <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+            </article>
+            <article class="project-card reveal">
+              <div class="project-meta">
+                <span>Automation</span>
+                <span>2026</span>
+              </div>
+              <h3>效率自动化</h3>
+              <p>整理常用脚本、提示词和工作流，让重复任务变得更稳定、更轻松。</p>
+              <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+            </article>
+            <article class="project-card reveal">
+              <div class="project-meta">
+                <span>Notes</span>
+                <span>Now</span>
+              </div>
+              <h3>学习笔记</h3>
+              <p>记录技术学习、产品观察和实践复盘，把零散知识变成可检索资产。</p>
+              <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="skills-title">
+        <div class="section-inner split-layout">
+          <div>
+            <p class="section-kicker">Toolkit</p>
+            <h2 id="skills-title">技能栈</h2>
+            <p class="muted">
+              这里可以替换成你最熟悉的技术、工具或专业方向。
+            </p>
+          </div>
+          <div class="skill-list" aria-label="技能列表">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Git</span>
+            <span>AI Tools</span>
+            <span>Automation</span>
+            <span>Product Thinking</span>
+            <span>Writing</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-band" id="contact" aria-labelledby="contact-title">
+        <div class="section-inner contact-layout">
+          <div>
+            <p class="section-kicker">Contact</p>
+            <h2 id="contact-title">欢迎交流想法、项目和机会。</h2>
+          </div>
+          <div class="contact-actions">
+            <a class="button primary" href="mailto:hello@example.com">发送邮件</a>
+            <a
+              class="button secondary"
+              href="https://github.com/chenguoao"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© 2026 Chenguoao</span>
+      <a href="#top">回到顶部</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
