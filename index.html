@@ -20,25 +20,30 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="topbar" aria-label="主导航">
+    <header class="topbar" aria-label="主导航" data-i18n-aria="topbarAria">
       <a class="site-name" href="#top">陈国傲</a>
-      <nav class="nav-links" aria-label="页面导航">
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#education">Education</a>
-      </nav>
+      <div class="topbar-actions">
+        <nav class="nav-links" aria-label="页面导航" data-i18n-aria="navAria">
+          <a href="#about" data-i18n="navAbout">关于我</a>
+          <a href="#experience" data-i18n="navExperience">工作经历</a>
+          <a href="#projects" data-i18n="navProjects">重点项目</a>
+          <a href="#education" data-i18n="navEducation">教育经历</a>
+        </nav>
+        <div class="language-switcher" role="group" aria-label="语言切换" data-i18n-aria="languageAria">
+          <button class="language-button is-active" type="button" data-language="zh" aria-pressed="true">中文</button>
+          <button class="language-button" type="button" data-language="en" aria-pressed="false">EN</button>
+        </div>
+      </div>
     </header>
 
     <main class="page-shell" id="top">
-      <aside class="profile-panel" aria-label="个人资料">
-        <img class="avatar" src="assets/profile.jpg" alt="陈国傲头像" />
+      <aside class="profile-panel" aria-label="个人资料" data-i18n-aria="profileAria">
+        <img class="avatar" src="assets/profile.jpg" alt="陈国傲头像" data-i18n-alt="avatarAlt" />
         <h1>陈国傲</h1>
         <p class="role">AI Product Manager</p>
-        <p class="affiliation">字节跳动 · 视频架构</p>
-        <p class="location">北京</p>
+        <p class="location" data-i18n="location">北京</p>
 
-        <div class="profile-links" aria-label="联系方式">
+        <div class="profile-links" aria-label="联系方式" data-i18n-aria="contactAria">
           <a href="mailto:chenguoao1@gmail.com">Email</a>
           <a href="https://github.com/Wscga1" target="_blank" rel="noreferrer">GitHub</a>
           <a href="https://github.com/Wscga1/Wscga1.github.io" target="_blank" rel="noreferrer">Website</a>
@@ -48,136 +53,102 @@
 
       <div class="content-flow">
         <section class="section" id="about" aria-labelledby="about-title">
-          <h2 id="about-title">About Me</h2>
-          <p>
-            我是一名关注 AI、直播和实时互动技术的产品经理，目前在字节跳动视频架构方向工作。
-            我的经历覆盖多模态实时视频生成模型、抖音直播开看播体验与成本优化、StreamX 直播前处理服务、
-            火山引擎视频直播 SDK 商业化。
+          <h2 id="about-title" data-i18n="aboutTitle">关于我</h2>
+          <p data-i18n="aboutIntro">
+            我是一名关注 AI、直播和实时互动技术的产品经理，目前在字节跳动视频架构方向工作。我的经历覆盖实时视频生成模型、抖音直播开看播体验与成本优化、StreamX 直播前处理服务、火山引擎视频直播 SDK 商业化。
           </p>
-          <p>
-            我喜欢把技术边界、用户场景和业务结果放在同一张图里思考：先定义值得解决的问题，
-            再拆出可落地的产品路径，并通过工程协作、评测体系和持续迭代把它变成真实可用的能力。
-          </p>
-          <div class="keyword-row" aria-label="能力关键词">
-            <span>AI 产品</span>
-            <span>多模态模型</span>
-            <span>直播/RTC</span>
-            <span>SDK 商业化</span>
-            <span>C 端体验</span>
-            <span>B 端增长</span>
+          <div class="keyword-row" aria-label="能力关键词" data-i18n-aria="keywordAria">
+            <span data-i18n="keywordAi">AI 产品</span>
+            <span data-i18n="keywordVideo">实时视频生成模型</span>
+            <span data-i18n="keywordLive">直播/RTC</span>
+            <span data-i18n="keywordSdk">SDK 商业化</span>
+            <span data-i18n="keywordConsumer">C 端体验和功能</span>
+            <span data-i18n="keywordBusiness">B 端增长</span>
           </div>
         </section>
 
         <section class="section" id="experience" aria-labelledby="experience-title">
-          <h2 id="experience-title">Experience</h2>
+          <h2 id="experience-title" data-i18n="experienceTitle">工作经历</h2>
           <div class="entry-list">
             <article class="entry">
-              <div class="entry-date">2022.04 - 至今</div>
+              <div class="entry-date" data-i18n="dateCurrent">2022.04 - 至今</div>
               <div class="entry-body">
-                <h3>字节跳动 · 产品经理（视频架构）</h3>
-                <p>
-                  先后负责流光实时视频生成模型、抖音直播开看播与连线、StreamX 直播前处理服务、
-                  火山引擎视频直播 SDK 等方向，工作覆盖模型能力定义、训练数据框架、工程链路、
-                  体验/成本策略、生态合作与商业化增长。
-                </p>
+                <h3 data-i18n="jobByteTitle">字节跳动 · 产品经理（视频架构）</h3>
+                <p data-i18n="jobByteDescription">先后负责流光实时视频生成模型、抖音直播开看播与连线、StreamX 直播前处理服务、火山引擎视频直播 SDK 等方向，工作覆盖模型能力定义、训练数据框架、工程链路、体验/成本策略、生态合作与商业化增长。</p>
               </div>
             </article>
 
             <article class="entry">
               <div class="entry-date">2021.11 - 2022.04</div>
               <div class="entry-body">
-                <h3>字节跳动 · 实习产品经理（内容安全）</h3>
-                <p>
-                  完成消重库重构和前端剪辑功能建设，节省样本入库运营成本和视频体裁进审量约 1/3。
-                </p>
+                <h3 data-i18n="jobTrustTitle">字节跳动 · 实习产品经理（内容安全）</h3>
+                <p data-i18n="jobTrustDescription">完成消重库重构和前端剪辑功能建设，节省样本入库运营成本和视频体裁进审量约 1/3。</p>
               </div>
             </article>
 
             <article class="entry">
               <div class="entry-date">2021.08 - 2021.10</div>
               <div class="entry-body">
-                <h3>上海微创软件股份有限公司 · 实习产品经理</h3>
-                <p>
-                  负责“西岸生活”小程序中的开票、地图服务查询和管理后台建设，服务百万用户，
-                  功能上线提高了用户留存。
-                </p>
+                <h3 data-i18n="jobWicresoftTitle">上海微创软件股份有限公司 · 实习产品经理</h3>
+                <p data-i18n="jobWicresoftDescription">负责“西岸生活”小程序中的开票、地图服务查询和管理后台建设，服务百万用户，功能上线提高了用户留存。</p>
               </div>
             </article>
 
             <article class="entry">
               <div class="entry-date">2021.01 - 2021.04</div>
               <div class="entry-body">
-                <h3>江苏集萃苏科思科技有限公司 · 实习前端开发</h3>
-                <p>
-                  参与 DiatomAI 法医硅藻自动分析系统 PC 客户端前端开发和检测数据分析，
-                  实现送审图片遍历与打标，并通过分析识别表现提升正确率。
-                </p>
+                <h3 data-i18n="jobJitriTitle">江苏集萃苏科思科技有限公司 · 实习前端开发</h3>
+                <p data-i18n="jobJitriDescription">参与 DiatomAI 法医硅藻自动分析系统 PC 客户端前端开发和检测数据分析，实现送审图片遍历与打标，并通过分析识别表现提升正确率。</p>
               </div>
             </article>
           </div>
         </section>
 
         <section class="section" id="projects" aria-labelledby="projects-title">
-          <h2 id="projects-title">Selected Projects</h2>
+          <h2 id="projects-title" data-i18n="projectsTitle">重点项目</h2>
           <div class="project-list">
             <article class="project-entry">
-              <div class="project-badge">AI Video</div>
+              <div class="project-badge">Real Time V2V</div>
               <div>
-                <h3>流光实时视频生成模型</h3>
-                <p class="project-meta">Owner · 字节跳动</p>
-                <p>
-                  从 0 到 1 推动流式视频生成模型建设，覆盖视频局部编辑、全局风格转换、
-                  训练数据制作框架、主观评测方法、工程链路搭建和项目推广落地。
-                </p>
+                <h3 data-i18n="projectV2vTitle">流光实时视频生成模型</h3>
+                <p class="project-meta">Founder</p>
+                <p data-i18n="projectV2vDescription">从 0 到 1 完成实时流式视频生成模型的项目与资源筹备、模型能力定义、训练数据生产链路搭建、评测方法建设、直播工程落地和项目推广，达到 PMF。</p>
               </div>
             </article>
 
             <article class="project-entry">
-              <div class="project-badge">Douyin Live</div>
+              <div class="project-badge">LIVE Infra</div>
               <div>
-                <h3>抖音直播</h3>
-                <p class="project-meta">开看播体验 · 连线 · 画质/成本优化</p>
-                <p>
-                  负责抖音直播与连线的开播、看播客户端和服务端功能玩法建设，并通过策略进行体验与成本优化。
-                  工作覆盖游戏画质优化、多设备开播、鱼眼镜头 180 度 FOV 开播、双屏模式、调音台、
-                  跨屏礼物和互动玩法等方向，也参与卡塔尔世界杯 4K HDR、PICO VR 开看播、
-                  小米眼镜/DJI 设备开播及手机芯片厂商合作优化等专项。
-                </p>
+                <h3 data-i18n="projectStreamXTitle">StreamX 直播前处理服务</h3>
+                <p class="project-meta">Founder</p>
+                <p data-i18n="projectStreamXDescription">完成新服务构思、设计、资源协调、落地和推广，覆盖直播主流场景。以团播在线合演为例，在云端完成多主播合演，打破机器性能和空间约束。</p>
               </div>
             </article>
 
             <article class="project-entry">
-              <div class="project-badge">Live Infra</div>
+              <div class="project-badge">Douyin LIVE</div>
               <div>
-                <h3>StreamX 直播前处理服务</h3>
-                <p>
-                  完成新服务构思、设计、资源协调、落地和推广，覆盖直播主流场景。
-                  以团播在线合演为例，在云端完成多主播合演，打破机器性能和空间约束。
-                </p>
+                <h3 data-i18n="projectDouyinTitle">抖音直播</h3>
+                <p class="project-meta">Product</p>
+                <p data-i18n="projectDouyinDescription">负责抖音直播与连线的开播、看播客户端和服务端功能玩法建设，并通过策略进行体验与成本优化。工作覆盖游戏画质优化、多设备开播、鱼眼镜头 180 度 FOV 开播、双屏模式、调音台、跨屏礼物和互动玩法等方向，也参与卡塔尔世界杯 4K HDR、PICO VR 开看播、小米眼镜/DJI 设备开播及手机芯片厂商合作优化等专项。</p>
               </div>
             </article>
 
             <article class="project-entry">
-              <div class="project-badge">SDK</div>
+              <div class="project-badge">LIVE Infra</div>
               <div>
-                <h3>火山引擎视频直播 SDK</h3>
-                <p class="project-meta">B 端产品 · 商业化增长</p>
-                <p>
-                  推动直播开看播 SDK 对外售卖，通过抖音同款能力、SDK 生态联动和组件化功能建设，
-                  有效提升客户计收和收入规模。
-                </p>
+                <h3 data-i18n="projectSdkTitle">火山引擎视频直播 SDK</h3>
+                <p class="project-meta">Product</p>
+                <p data-i18n="projectSdkDescription">推动直播开看播 SDK 对外售卖，通过抖音同款能力、SDK 生态联动和组件化功能建设，有效提升客户计收和收入规模。</p>
               </div>
             </article>
 
             <article class="project-entry">
-              <div class="project-badge">Startup</div>
+              <div class="project-badge" data-i18n="startupBadge">创业</div>
               <div>
-                <h3>有浦 Youpu / 菜狗识途 / EAP Talk</h3>
-                <p class="project-meta">创始人 / 产品 / 研发 · 西安菜狗网络科技有限公司</p>
-                <p>
-                  校园信息平台累计校内用户 1.5 万，校园导航小程序累计用户 6 千+ 并获 GitHub 30+ Star，
-                  AI 口语练习产品累计注册用户 2 万+。
-                </p>
+                <h3 data-i18n="projectStartupTitle">有浦 Youpu / 菜狗识途 / EAP Talk</h3>
+                <p class="project-meta" data-i18n="projectStartupMeta">创始人 / 产品 / 研发 · 西安菜狗网络科技有限公司（已注销）</p>
+                <p data-i18n="projectStartupDescription">校园信息平台累计校内用户 1.5 万，校园导航小程序累计用户 6 千+ 并获 GitHub 30+ Star，AI 口语练习产品累计注册用户 2 万+。</p>
                 <a class="text-link" href="https://github.com/Wscga1/miniprogram-CampusMap" target="_blank" rel="noreferrer">
                   CampusMap GitHub
                 </a>
@@ -188,26 +159,26 @@
 
         <section class="section two-column" id="education" aria-labelledby="education-title">
           <div>
-            <h2 id="education-title">Education</h2>
+            <h2 id="education-title" data-i18n="educationTitle">教育经历</h2>
             <div class="compact-card">
-              <h3>西交利物浦大学</h3>
-              <p>数据科学与大数据技术 本科</p>
-              <p>人工智能与先进计算学院 · 2019.09 - 2023.06</p>
+              <h3 data-i18n="educationSchool">西交利物浦大学</h3>
+              <p data-i18n="educationDegree">数据科学与大数据技术 本科</p>
+              <p data-i18n="educationCollege">人工智能与先进计算学院 · 2019.09 - 2023.06</p>
             </div>
           </div>
           <div>
-            <h2>Interests</h2>
+            <h2 data-i18n="interestsTitle">关注方向</h2>
             <div class="compact-card">
-              <p>多模态模型、实时视频生成、直播/RTC、AI 内容生产、C 端互动体验、B 端 SDK 增长。</p>
+              <p data-i18n="interestsDescription">多模态模型、实时视频生成、直播/RTC</p>
             </div>
           </div>
         </section>
 
         <footer class="site-footer">
-          <span>© 2026 陈国傲</span>
-          <span>Last updated: Jul 2026</span>
+          <span data-i18n="lastUpdated">最后更新：2026 年 7 月</span>
         </footer>
       </div>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
